@@ -1,0 +1,12 @@
+<h5>Edit Product</h5>
+<div class="bg-light p-3 col-md-4">
+  <form class="form-group" (submit)="onSubmit()">
+    <p>Title: </p>
+    <input class="form-control mb-3" type="text" name="product.title" [(ngModel)]="product.title"/>
+    <p>Price: </p>
+    <input class="form-control mb-3" type="text" name="product.price" [(ngModel)]="product.price"/>
+    <p>Image url: </p>
+    <input class="form-control mb-3" type="text" name="product.image" [(ngModel)]="product.image"/>
+    <input type="submit" class="btn btn-primary"/>
+  </form>
+</div>

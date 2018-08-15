@@ -1,0 +1,12 @@
+<h5>Create a New Product</h5>
+<div class="bg-light p-3 col-md-4">
+    <form class="form-group" (submit)="onSubmit()">
+      <p>Title: </p>
+      <input class="form-control mb-3" type="text" name="newProduct.title" [(ngModel)]="newProduct.title"/>
+      <p>Price: </p>
+      <input class="form-control mb-3" type="text" name="newProduct.price" [(ngModel)]="newProduct.price"/>
+      <p>Image url: </p>
+      <input class="form-control mb-3" type="text" name="newProduct.image" [(ngModel)]="newProduct.image"/>
+      <input type="submit" class="btn btn-primary"/>
+    </form>
+</div>

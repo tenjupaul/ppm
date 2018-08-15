@@ -1,0 +1,8 @@
+<div class="card-deck">
+  <div *ngFor="let product of products" class="card p-2 text-center shadow rounded">
+    <p><img [src]="product.image" [alt]="product.title" width="100px" height="100px"/></p>
+    <p>{{product.title}}</p>
+    <p>$ {{product.price}}</p>
+    <p><a class="btn btn-primary shadow rounded" [routerLink]="['edit',product._id]">EDIT</a><button class="btn btn-danger shadow rounded ml-3" (click)="deleteAuthor(product._id)">DELETE</button></p>
+  </div>
+</div>
